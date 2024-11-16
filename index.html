@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Especificidad</h1>
+        <img src="./imagenes/Logo2Final.png" alt="Descripción de la imagen" class="header-image">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../FormulariosCSS/index.html">Formularios CSS</a></li>
+            <li><a href="../ColorenPaginaWeb/index.html">Color en Página Web</a></li>
+            <li><a href="../Especificidad/">Especificidad</a></li>
+            <li><a href="../AfteryBefore/index.html">After y Before</a></li>
+            <li><a href="../Tablas/index.html">Tablas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <section class="column">
+            <h2>Ideas Principales</h2>
+           <ul class="large-text">
+            <li><strong>Reglas Generales de Especificidad:</strong>ID tiene la mayor prioridad, seguido de clases, atributos y pseudo-clases, y finalmente etiquetas o elementos. Los ID siempre tienen un valor de especificidad más alto que las clases o las etiquetas.
+                Los selectores de clase (como .mi-clase) y pseudo-clases (como :hover, :nth-child) tienen más peso que los selectores de tipo (como div, p).
+                Un ID supera a cualquier cantidad de clases, atributos o elementos.</li>
+            <li><strong>Reglas de Importancia y !important: </strong>El uso de la regla !important puede alterar la especificidad. Aunque una regla con !important no se calcula según la especificidad normal, tendrá prioridad sobre las reglas sin !important, sin importar la especificidad de estas últimas.</li>
+            <li><strong>El Orden de las Reglas en Caso de Igualdad:</strong>Si dos reglas tienen la misma especificidad, la que aparece última en el código CSS prevalecerá.</li>
+            <li><strong>Especificidad en los Selectores Compuestos:</strong>Cuando se usan selectores compuestos (combinando elementos, clases y atributos), el puntaje se suma.</li>
+           </ul>
+
+        </section>
+
+        
+        <section class="column">
+            <h2>Apuntes de Clase</h2>
+            <ul class="medium-text">
+                <li> <strong>Especificidad Css </strong> La especficidad es el medio por le cual los navegadores deciden que valores de propiedad Css son los mas relevantes para un elemento y, por lo tanto, se aplicaran.</li>
+                <li><strong>Como se calcula ?</strong>La especificidad solo se aplica cuano el mismo elemento es el objetivo de varias declaraciones. Segun las relgas de Css, los elementos dirigidos directamente siempre tendran prioridad sobre las reglas que un elemento hereda de su antepasado.</li>
+                <li><strong>Clases, atributos y pseudo-clases</strong> Clases, atributos y pseudo-clases : esta categoria incluye, clases, atributos y pseudoclases como: hover, focus, etc.</li>
+            </ul>
+            
+            
+            <p >
+                 </p>
+                <h2> </h2>
+                <p> </p>
+                <h2></h2>
+                <p></p>
+            <img src="./imagenes/selectores_home-footer-sel-hover_1-scaled.jpg" alt="Descripción de la imagen" class="image">
+        </section>
+    </div>
+
+    <footer class="footer">
+        <h2>Resumen </h2>
+        <p class="footer-text">La especificidad en CSS3 es un sistema que determina qué reglas se aplican cuando varias coinciden con un elemento. Se calcula con base en la combinación de selectores de ID, clase, atributos, y elementos. Los ID tienen mayor prioridad que las clases, y estas a su vez tienen más peso que los elementos. El uso de !important puede alterar este sistema, otorgando prioridad a la regla marcada como importante.</p>
+    </footer>
+</body>
+</html>
